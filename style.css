@@ -500,6 +500,7 @@ footer .copyright {
 }
 
 
+
 /* shop page */
 #page-header{
     background-image: url("images/diy-photo-backdrop-painting.jpg");
@@ -653,13 +654,7 @@ footer .copyright {
     z-index: -9;
 }
 
-
-
-
-
-/* =========================== */
-/* style of about us  */
-/* ========================= */
+/* about page */
 #page-header.about-header {
     background-image: url("images/bc4.webp");
 }
@@ -680,4 +675,414 @@ footer .copyright {
     color: #000;
     font-weight: bold;
     padding-bottom: 20px;
+}
+/* Cart Page */
+#cart {
+    overflow-x: auto;
+}
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img {
+    width: 90px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5){
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+#cart table thead{
+     border: 1px solid #e2e9e1;
+     border-left: none;
+     border-right: none;
+}
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+#cart table tbody td {
+    font-size: 13px;
+}
+#cart-add{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#coupon {
+    width: 50%;
+    
+} 
+    #coupon h3,
+    #subtotal h3 {
+        padding-bottom: 15px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+ #coupon input {
+     padding: 10px 20px;
+     outline: none;
+     width: 60%;
+     margin-right: 10px;
+     border: 1px solid #e2e9e1;
+ }
+ #coupon button,
+ #subtotal button{
+     background-color: #088178;
+     color: #fff;
+     border-radius: 10%;
+     padding: 20px 12px;
+ }
+ #subtotal {
+     width: 50%;
+     margin-bottom:30px ;
+     border: 1px solid #e2e9e1;
+     padding: 30px;
+ }
+ #subtotal table{
+     border-collapse: collapse;
+     width: 100%;
+     margin-bottom: 20px;
+ }
+ #subtotal table td {
+     width: 50%;
+     border: 1px solid #e2e9e1;
+     padding: 10px;
+     font-size: 13px;
+ }
+ #contact-details {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+ }
+ #contact-details.details {
+     width: 40%;
+ }
+ #contact-details.details span,
+ #form-details form span {
+     font-size: 12px;
+ }
+ #contact-details .details h2,
+ #form-details form h2{
+    font-size:26px ;
+    line-height: 35px;
+    padding: 20px 0;
+ }
+ #contact-details .details h3 {
+     font-size: 16px;
+     padding-bottom: 15px;
+ }
+ #contact-details .details li {
+     list-style: none;
+     display: flex;
+     padding: 10px 0;
+ }
+ #contact-details .details li i {
+     font-size: 14px;
+     padding-right: 22px;
+ }
+ #contact-details .details li p {
+     margin: 0;
+     font-size: 14px;
+ }
+ #contact-details .map {
+     width: 55%;
+     height: 400px;
+ }
+ #contact-details .map iframe {
+     width: 100%;
+     height: 100%;
+ }
+ #form-details {
+     display: flex;
+     justify-content: space-between;
+     margin: 30px;
+     padding: 80px;
+     border: 1px solid #e1e1e1;
+
+ }
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+#form-details form button{
+    background-color: #088178;
+    color: #fff;
+}
+#form-details .people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+#form-details .people div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+#form-details .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+
+
+/* Start media Query  for ipad */
+@media (max-width:799px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right:-300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+    #product1 .pro-container {
+        justify-content:center;
+    }
+    #product1 .pro{
+        margin: 15px;
+    }
+    #banner{
+        height: 20vh;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner3{
+        padding: 0 40px;
+    }
+    #banner3 .banner-box {
+        width: 28%;
+    }
+    #newsletter .form{
+        width: 70%;
+    }
+    /*contact page  */
+    #form-details{
+        padding: 40px;
+    }
+    #form-details form{
+        width: 50%;
+    }
+
+}
+
+/*  */
+/* media query for mobile platform */
+@media (max-width: 477px) {
+    #header {
+        padding: 10px 30px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature {
+        justify-content: space-between;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #product .pro {
+        width: 100%;
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    #sm-banner .banner-box2 {
+     margin-top: 20px;   
+    }
+    #banner3 {
+        padding: 0 20px;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details {
+        width: 100%;
+        padding-top: 30px;
+    }
+    newsletter {
+        padding: 40px 20px;
+    }
+    #newsletter .form{
+        width: 100%;
+    }
+    footer .copyright {
+        text-align: start;
+    }
+    /*blog page */
+    #blog {
+        padding: 90px 20px 0 0;
+
+    }
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #blog .blog-details {
+        width: 100%;
+    }
+
+    /* About pages */
+    #about-head {
+        flex-direction: column;
+    }
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* Cart page */
+    #cart-add {
+        flex-direction: column;
+    }
+    #coupon {
+        width: 100%;
+    }
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+    /* Contact Page */
+    #contact-details {
+        flex-direction: column;
+    }
+    #contact-details .details,
+    #contact-details .map{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #form-details {
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    #form-details form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
 }
